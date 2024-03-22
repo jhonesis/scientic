@@ -1,0 +1,125 @@
+/* ibm-plex-mono-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ibm-plex-mono-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-mono-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ibm-plex-mono-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-regular - latin */
+ @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+/*general*/
+
+.titles{
+    font-family: "IBM Plex Mono";
+}  
+
+body{
+    font-family: "Open Sans";
+}
+.special{
+    color: #212529;
+    background-color:#ced4da;
+}
+
+.bgmenu{
+    background-color:rgba(33, 37, 41, 0.9);
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-brands:hover{
+    color:#9eeaf9;
+}
+
+.headers{
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    background-color: #212529;
+    min-height: 70px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#head_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    color:#ced4da;
+    font-size:xx-large;
+    font-family: "IBM Plex Mono";
+    font-weight: 600;
+}
+
+.art_home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+
+
+/* ---- particles.js container ---- */
+#particles-js {
+    background-color:#212529;
+    background-size: cover;
+}
+/* ---- stats.js ---- */
+.count-particles {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 10px 3px 3px;
+}
+.custom-gradient-text {
+    background: linear-gradient(to right, #0dcaf0, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*--header--*/
+  #catnas{
+    width: 65%;
+}
+

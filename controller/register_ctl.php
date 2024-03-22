@@ -1,0 +1,1 @@
+<?php require RACINE."/view/register_view.php";?>

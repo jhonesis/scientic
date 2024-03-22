@@ -1,0 +1,1 @@
+<?php require RACINE."/view/home_view.php";?>
