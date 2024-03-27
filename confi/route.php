@@ -22,7 +22,10 @@ $rout=null;
             break;     
         case 'logout':
             $rout= "/logout_ctl.php";
-            break;         
+            break;    
+        case 'project':
+            $rout= "/project_ctl.php";
+            break;      
         default:
             $rout="/404_ctl.php";
             break;

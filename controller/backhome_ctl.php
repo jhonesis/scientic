@@ -1,6 +1,5 @@
 <?php
-// Verificar si la sesión está iniciada
-if(!isset($_SESSION['email_us'])) {
+if(!isset($_SESSION['email'])) {
     header("Location: 404_ctl.php");
     exit();
 }
@@ -14,8 +13,7 @@ if(!isset($_SESSION['email_us'])) {
     <a href="?action=logout">Logout</a>
 
     <?php
-            echo $_SESSION['email_us'];
-            echo $_SESSION['pass_us'];
+    echo $_SESSION["id_user"],$_SESSION["nom"],$_SESSION["prenom"],$_SESSION["email"],$_SESSION["pass"],$_SESSION["role"];
     ?>
 </body>
 </html>
