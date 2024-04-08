@@ -33,7 +33,7 @@
                         <a class="nav-link" href="?action=contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a href="?action=signin" class="btn btn-info ms-md-5 mt-3 mt-md-0">Sign In</a>
+                        <a href="?action=signin" class="btn btn-info ms-md-5 mt-3 mt-md-0" target="_blank">Sign In</a>
                     </li>
                     <li class="nav-item">
                         <a href="?action=register" class="btn btn-outline-info ms-md-3 mt-3 mt-md-0">Register</a>

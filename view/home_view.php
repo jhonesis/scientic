@@ -11,8 +11,8 @@
                     </div>
                     <span id="typed" class="text-light my-5"></span>
                 </div>
-                <div class="mt-5 col-12 col-md-6">
-                    <img src="assets/media/img_head_h.png" alt="image header home" class="img-fluid w-100">
+                <div class="mt-5 col-12 col-md-6"   id="img_home">
+                    <img src="assets/media/img_head_h.png" alt="image header home" class="img-fluid w-100" loading="lazy">
                 </div>
 
             </div>
@@ -21,8 +21,7 @@
         <!--about-->
 
         <div class="container text-center mt-5">
-            <h1 class="titles display-4 text-info-emphasis pt-5 text-decoration-underline">About Us</h1>
-            <img src="assets/media/img_about.png" class="img-fluid py-3 w-50" alt="image about us">
+            <img src="assets/media/img_about.png" class="img-fluid py-3 w-50" alt="image about us" loading="lazy">
             <p class="fs-4 text-secondary pb-5">Scientic is a non-profit project whose main objective is to promote the dissemination of knowledge, regardless of its origin (whether from a university, company or garage). Scientic seeks to give greater visibility to new and more effective ways of solving problems, in order to optimize the use of resources. This academic and scientific approach allows us to explore new perspectives and innovative solutions, which can have a positive impact in both academia and the business world.</p>
         </div>
 
@@ -36,7 +35,7 @@
                     <p><a href="?action=nasa" class="btn btn-outline-info">Search</a></p>
                 </div>
                 <figure class="col-md-6">
-                    <img src="assets/media/img_nasa_art.png" class="img-fluid pt-3" alt="image nasa">
+                    <img src="assets/media/img_nasa_art.png" class="img-fluid pt-3" alt="image nasa" loading="lazy">
                 </figure>
             </div>
         </div>
@@ -44,7 +43,6 @@
 
         <!--articles-->
         <section class="py-5 text-center">
-            <h1 class="titles display-4 text-info-emphasis pt-5 text-decoration-underline">You Can</h1>
             <article class="container-fluid art_home">
                 <div class="row container my-5 text-center d-flex align-items-center mx-auto gx-5">
                     <div class="col-md-6">
@@ -52,7 +50,7 @@
                         <p class="fs-4 text-secondary">Regardless of your academic level, learn from the review and application of these developments.</p>
                     </div>
                     <figure class="col-md-6">
-                        <img src="assets/media/img_art1_home.png" class="img-fluid pt-3" alt="image article 1">
+                        <img src="assets/media/img_art1_home.png" class="img-fluid pt-3" alt="image article 1" loading="lazy">
                     </figure>
                 </div>
             </article>
@@ -60,10 +58,10 @@
                 <div class="row container my-5 text-center d-flex align-items-center mx-auto gx-5 flex-md-row-reverse">
                     <div class="col-md-6">
                         <p class="titles display-6 text-info"><strong>Imagine</strong></p>
-                        <p class="fs-4 text-secondary">Creates technological tools, innovating in science and sharing its results.</p>
+                        <p class="fs-4 text-secondary">Create technological tools, innovating in science and sharing its results.</p>
                     </div>
                     <figure class="col-md-6">
-                        <img src="assets/media/img_art2_home.png" class="img-fluid pt-3" alt="image article 2">
+                        <img src="assets/media/img_art2_home.png" class="img-fluid pt-3" alt="image article 2" loading="lazy">
                     </figure>
                 </div>
             </article>
@@ -71,10 +69,10 @@
                 <div class="row container my-5 text-center d-flex align-items-center mx-auto gx-5">
                     <div class="col-md-6">
                         <p class="titles display-6 text-info"><strong>Meet</strong></p>
-                        <p class="fs-4 text-secondary">Find the key people to work on your business projects, take advantage of their knowledge.</p>
+                        <p class="fs-4 text-secondary">Find the apropiate people to work on your business projects, take advantage of their knowledge.</p>
                     </div>
                     <figure class="col-md-6">
-                        <img src="assets/media/img_art3_home.png" class="img-fluid pt-3" alt="image article 3">
+                        <img src="assets/media/img_art3_home.png" class="img-fluid pt-3" alt="image article 3" loading="lazy">
                     </figure>
                 </div>
             </article>

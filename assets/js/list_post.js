@@ -1,7 +1,7 @@
 let div=document.querySelector("#list_post");
 function list(titre,date,id){
     let div_post=document.createElement("div");
-    div_post.classList.add("rounded-2", "bg-white", "my-5", "shadow","p-3", );
+    div_post.classList.add("rounded-2", "bg-white", "my-5", "shadow","p-3");
     let dates=document.createElement("h6");
     dates.classList.add("text-secondary");
     dates.innerHTML=date;

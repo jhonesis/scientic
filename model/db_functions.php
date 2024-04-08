@@ -5,12 +5,16 @@
     function search_user($email_us,$pass_us){
         try {
             $conn=connection();
-            $query = $conn->prepare("SELECT * FROM users WHERE  email=:email AND pass=:pass");
+            $query = $conn->prepare("SELECT * FROM users WHERE  email=:email");
             $query->bindParam(':email', $email_us,PDO::PARAM_STR);
-            $query->bindParam(':pass', $pass_us,PDO::PARAM_STR);
             $query->execute();  
             $resultat = $query->fetch(PDO::FETCH_ASSOC);
-            return $resultat;
+            if (!empty($resultat)) {
+                $pass_has=$resultat["pass"];
+                if (password_verify($pass_us, $pass_has)) {
+                    return $resultat;
+                }
+            }  
         } catch (PDOException $e) {
             throw new Exception("Error finding the user: " . $e->getMessage());
         }
@@ -67,7 +71,8 @@
             $query->bindParam(":description", $description,PDO::PARAM_STR);
             $query->bindParam(":id_user", $id_user,PDO::PARAM_INT);
             $query->execute(); 
-            echo "Post inserted correctly";
+            $message= "Post Inserted Correctly";
+            return $message;
         } catch (PDOException $e) {
             throw new Exception("Error inserting the post: " . $e->getMessage());
         }
@@ -101,9 +106,28 @@
             $query->bindParam(":post", $id_post,PDO::PARAM_INT);
             $query->bindParam(":date", $date,PDO::PARAM_STR);
             $query->execute(); 
-            echo "Post published correctly";
+            $message="Post published correctly";
+            return $message;
         } catch (PDOException $e) {
             throw new Exception("Error inserting the post: " . $e->getMessage());
+        }
+    }
+
+    function edit_user($id_user,$nom,$prenom,$email,$pass){
+        try {
+            $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
+            $conn=connection();
+            $query = $conn->prepare("UPDATE users SET nom = :nom, prenom = :prenom, email = :email, pass = :pass WHERE id_user = :id");
+            $query->bindParam(":nom", $nom,PDO::PARAM_STR);
+            $query->bindParam(":prenom", $prenom,PDO::PARAM_STR);
+            $query->bindParam(":email", $email,PDO::PARAM_STR);
+            $query->bindParam(":pass", $pass_hash,PDO::PARAM_STR);
+            $query->bindParam(":id", $id_user,PDO::PARAM_INT);
+            $query->execute(); 
+            $message = "Profile edited";
+            return $message;
+        } catch (PDOException $e) {
+            throw new Exception("Error editing the profile: " . $e->getMessage());
         }
     }
 
@@ -115,10 +139,10 @@
             header('Content-Type:text/plain');
         
             echo " Function:search_user() : \n";
-            print_r(search_user("jhonesis@gmail.com","987250jd"));
+            print_r(search_user("pepito@test.com","987250jd"));
 
             echo " Function:posts_pub() : \n";
-            print_r(post_valid(2));
+            //print_r(post_valid(2));
 
             echo " Function:posts_nopub() : \n";
             print_r(posts_invalid());
@@ -131,5 +155,7 @@
 
             echo "function: add_post()  :\n";
             //print_r(add_post("article 5", "image 5", "Resume 5", "Description 5", 3));
+
+            //print_r(edit_user(3,"perez","pepito","pepito@test.com","987250jd"));
         }        
     ?>
