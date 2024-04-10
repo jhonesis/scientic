@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Platform dedicated to sharing technological, academic, industrial and scientific projects, through descriptive posts.">
+    <meta name="keywords" content="share, research, technology, review, projects, posts, development.">
+    <meta name="language" content="English">
+    <meta name="author" content="Jhon Deivy PEREZ ARGUELLO">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Scientic</title>
+    <title>ScienTIC</title>
 </head>
 <body class="bg-light">
     <header class="container-fluid bg-dark justify-content-center align-items-center">

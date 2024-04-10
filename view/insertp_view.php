@@ -1,5 +1,9 @@
 <?php 
-    /* insert post */
+    /* This PHP code snippet checks if the HTTP request method is POST.
+    It sanitizes and filters user input for titre (title), image, description, and resume.
+    If all input data is valid, it converts the title to title case and capitalizes the first letter of the summary.
+    Then it calls the add_post function to insert a post and provides appropriate messages based on the outcome.
+    If the request method is not POST, it prompts the user to enter post information */
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $titre = htmlentities($_POST["titre"]);
         $titre = filter_var($titre, FILTER_SANITIZE_STRING);
@@ -25,13 +29,13 @@
     }else {
         $message="Enter Post Information";
     }
-    ?>
+?>
 
 <?php include RACINE."/view/header_back.php";?>
     <main class="main">
         <div class="card">   
             <h2>Insert Post</h2>             
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="Form" >
+            <form action="?action=insertp" method="post" class="Form" >
                 <div class="card_text">
                     <p><?php echo $message;?></p>
                     <p><input type="text" name="titre" id="titre"  placeholder="Title" required></p>

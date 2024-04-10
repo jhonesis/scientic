@@ -24,7 +24,15 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-secondary">
-                    <p>Modal body text goes here.</p>
+                    <p>At ScienTIC, we strive to comply with all the parameters of the European General Data Protection Regulation (GDPR). We want to ensure that our users understand how their data is collected, used, and protected. Please read the following legal disclaimers carefully:</p>
+                    <p><strong>1. Compliance with GDPR:</strong></br>We affirm that our website fully complies with the requirements set forth by the European General Data Protection Regulation (GDPR). We prioritize the privacy and security of our users' personal information.</p>
+                    <p><strong>2. Purpose of Data Collection:</strong></br>Any data collected on our website will be used solely for the purpose of facilitating the publication of projects. We do not share user data with third parties without the user's consent.</p>
+                    <p><strong>3. Non-commercial and Non-marketing Use:</strong></br>We assure you that the data collected on our site will not be used for commercial or marketing purposes. We respect the privacy of our users and will not engage in any unauthorized use of their data.</p>
+                    <p><strong>4. Prohibition of Inappropriate Content:</strong></br>We strictly prohibit the publication of any pornographic, racist, or otherwise inappropriate material that undermines the integrity and legality of society. We maintain a safe and respectful environment for all users.</p>
+                    <p><strong>5. Graphic Elements Attribution:</strong></br>The graphic elements used on our website are sourced from <a href="https://www.vecteezy.com/" target="_blank">https://www.vecteezy.com/</a>. We acknowledge and attribute the use of these graphical elements to their respective creators.</p>
+                    <p><strong>6. Website Creator and Ownership:</strong></br>The website was created by engineer Jhon Deivy PEREZ. The site, ScienTIC, reserves all rights and prohibits any duplication or reproduction without explicit permission.</p>
+                    <p><strong>7. Copyright and Intellectual Property:</strong></br>All articles published on our website are the property of ScienTIC. The users who authored the articles expressly allow for their authorship to be displayed, even if their account is disabled for violating any policies.</p>
+                    <p>If you have any questions or concerns regarding our legal disclaimers, please feel free to contact us. We are here to assist you</p>           .
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>

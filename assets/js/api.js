@@ -1,9 +1,15 @@
+
 let div2=document.querySelector("#cat");
 let inp=document.querySelector("#texsof");
 let btnser=document.querySelector("#btnser");
 
 btnser.addEventListener("click",inf);
 
+/**
+ * The function `inf` fetches data from the NASA Tech Transfer Software API based on user input,
+ * displays the results with relevant information, and provides a button to open additional project
+ * info if available.
+ */
 function inf() {
     div2.innerHTML="";
     let texts=inp.value;

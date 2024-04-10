@@ -1,7 +1,11 @@
 <?php  include RACINE."/view/header.php";?>
 <?php
 require RACINE ."/model/register_db.php";
-
+/*This PHP code snippet checks if the HTTP request method is POST.
+It sanitizes and filters user input for nom_reg (last name), prenom_reg (first name), email_reg, and pass_reg (password).
+If all input data is valid, it converts the last name to uppercase and capitalizes the first letter of the first name.
+Then it calls the add_user function to register a new user and provides appropriate messages based on the outcome.
+If the request method is not POST, it prompts the user to enter their information. */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom_reg = htmlentities($_POST['nom_reg']);
     $nom_reg = filter_var($nom_reg, FILTER_SANITIZE_STRING);
@@ -32,10 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <main class="container">
         <h1 class="titles text-dark my-5 text-center"><strong>Become Part of Our Team</strong></h1>
         <div class="row my-5 text-center d-flex align-items-center mx-auto gx-5">   
-            <div class="col-md-6">
+            <figure>
+                <img src="assets/media/img_reg.png" class="img-fluid w-50 mb-5" alt="image register" loading="lazy">
+            </figure> 
+            <div>
                 <p class="titles display-6 text-info"><strong>Register</strong></p>
                 <p class="text-dark-emphasis"><?=$message?></p>
-                <form action="?action=register" method="post" id="reg_form" target="_blank">
+                <form action="?action=register" method="post" id="reg_form">
                     <p><input type="text" name="nom_reg" id="nom_reg" class="form-control w-50 mx-auto" required placeholder="Last Name"></p>
                     <p><input type="text" name="prenom_reg" id="prenom_reg" class="form-control w-50 mx-auto" required placeholder="First Name"></p>
                     <p><input type="email" name="email_reg" id="email_reg" class="form-control w-50 mx-auto" required placeholder="Email"></p>
@@ -44,9 +51,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p><input type="submit" value="Register" class="form-control btn btn-dark w-25 my-3 me-2" disabled id="btn_reg"></p>
                 </form>
             </div>
-            <figure class="col-md-6">
-                <img src="assets/media/img_reg.jpg" class="img-fluid shadow rounded-2" alt="image contact us" loading="lazy">
-            </figure> 
         </div>
     </main>
     <script>

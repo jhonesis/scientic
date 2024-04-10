@@ -48,6 +48,7 @@
         }
     }
 //****************************************************************************************************************************************** */
+//***************************************************************************************function copied
     function posts_invalid(){
         try {
             $conn=connection();
@@ -59,9 +60,9 @@
             throw new Exception("Error validating the post: " . $e->getMessage());
         }
     }
-
+//****************************************************************************************************************************************** */
+//***************************************************************************************function copied
     function add_post($titre,$image,$resume,$description,$id_user){
-
         try {
             $conn=connection();
             $query = $conn->prepare("INSERT INTO post (titre, image, resume, description, id_user) VALUES (:titre, :image, :resume, :description, :id_user)");
@@ -76,8 +77,8 @@
         } catch (PDOException $e) {
             throw new Exception("Error inserting the post: " . $e->getMessage());
         }
-
     }
+//****************************************************************************************************************************************** */    
 //***************************************************************************************function copied
     function acc_valid($id_user){
         try {
@@ -97,6 +98,7 @@
         }
     }
 //*********************************************************************************************************************************************/
+//***************************************************************************************function copied
     function pub_post($id_post,$id_user){
         try {
             $date = date('Y-m-d');
@@ -112,7 +114,8 @@
             throw new Exception("Error inserting the post: " . $e->getMessage());
         }
     }
-
+//*********************************************************************************************************************************************/
+//***************************************************************************************function copied
     function edit_user($id_user,$nom,$prenom,$email,$pass){
         try {
             $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
@@ -130,7 +133,26 @@
             throw new Exception("Error editing the profile: " . $e->getMessage());
         }
     }
-
+//*********************************************************************************************************************************************/    
+//***************************************************************************************function copied
+    function dis_acc($id_user){
+        try {
+            $conn=connection();
+            $query=$conn->prepare("DELETE FROM account WHERE id_user = :iduser");
+            $query->bindParam(":iduser",$id_user);
+            $query->execute();
+            $rowsDeleted = $query->rowCount();
+            if ($rowsDeleted > 0) {
+                $message = "Account deleted successfully!";
+            } else {
+                $message = "Account not found. No account was deleted.";
+            }
+            return $message;
+        } catch (PDOException $e) {
+            throw new Exception("Error deleting the account: " . $e->getMessage());
+        }
+    }
+//*********************************************************************************************************************************************/
 ?>
 
     <?php 

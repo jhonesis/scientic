@@ -1,7 +1,13 @@
 
 <?php
 require RACINE ."/model/signin_db.php";
-
+/*This PHP code snippet checks if the HTTP request method is POST.
+It sanitizes and filters user input for email_us and pass_us.
+If both input fields are valid, it searches for user credentials.
+If valid credentials are found, it starts a session and stores user information.
+If the account is disabled, it provides an appropriate message.
+If no valid credentials are found, it indicates incorrect or invalid credentials.
+If the request method is not POST, it prompts the user to enter their credentials.*/
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_us = htmlentities($_POST['email_us']);
     $email_us = filter_var($email_us, FILTER_VALIDATE_EMAIL);

@@ -24,13 +24,13 @@
                 <a href="?action=insertp"><i class="fa-solid fa-pen-to-square"></i><span>Insert Post</span></a>
               </li>
               <li>
-                <a href="?action=activatep"><i class="fa-solid fa-upload"></i><span>Activate Post</span></a>
+                <a href="?action=activatep" class="btns_admin"><i class="fa-solid fa-upload"></i><span>Activate Post</span></a>
               </li>
               <li>
                 <a href="?action=editp"><i class="fa-solid fa-user-pen"></i><span>Edit Profile</span></a>
               </li>
               <li>
-                <a href="?action=disablea"><i class="fa-solid fa-user-slash"></i><span>Disable Account</span></a>
+                <a href="?action=disablea" class="btns_admin"><i class="fa-solid fa-user-slash"></i><span>Disable Account</span></a>
               </li>
           </ul>
           <li class="logout_back">

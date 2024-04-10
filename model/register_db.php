@@ -1,5 +1,15 @@
 <?php
     include_once ("db_connection.php");
+/**
+ * The function `add_user` inserts a new user into a database table with hashed password and a default
+ * role of "contributor".
+
+ * The `add_user` function you provided is a PHP function that inserts a new user into a
+ * database table named `users`. The function takes four parameters: `` (user's last name),
+ * `` (user's first name), `` (user's email address), and `` (user's password)
+ * 
+ * The function `add_user` is returning the message "Register Confirmed."
+ */
     function add_user($nom,$prenom,$email,$pass){
         try {
             $role="contributor";

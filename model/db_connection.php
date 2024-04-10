@@ -1,5 +1,12 @@
 <?php 
 
+/**
+ * The function establishes a connection to a MySQL database using environment variables loaded from a
+ * .env file.
+ * 
+ * `connection()` function is returning a PDO (PHP Data Objects) database connection
+ * object.
+ */
     function connection(){
         try {
             require_once("../vendor/autoload.php");
@@ -15,9 +22,13 @@
 ?>    
 
     <?php 
+/* The code block you provided is checking if the current script file being executed is the same as the
+file itself. If this condition is true, it sets the content type of the response to plain text using
+the `header()` function. Then, it outputs the text "connection() : " followed by the result of
+calling the `connection()` function and printing the returned PDO database connection object using
+`print_r()`. */
         if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
             header('Content-Type:text/plain');
-
             echo "connection() : \n";
             print_r(connection());
         }    
