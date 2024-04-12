@@ -4,7 +4,7 @@
     <h1 class="titles text-dark my-5 text-center"><strong>Share your Concerns with Us</strong></h1>
     <div class="row my-5 text-center d-flex align-items-center mx-auto gx-5">
         <figure>
-            <img src="assets/media/img_cont.png" class="img-fluid w-25" alt="image contact us" loading="lazy">
+            <img src="assets/media/img_cont_min.webp" class="img-fluid w-25" alt="image contact us" loading="lazy">
         </figure>
         <div>
             <p class="titles display-6 text-info"><strong>Contact Us</strong></p>

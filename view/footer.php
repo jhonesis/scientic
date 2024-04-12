@@ -1,9 +1,9 @@
     <footer class="container-fluid bg-dark text-light text-center mt-3">
         <div class="pt-3">
-            <a class="navbar-brand fs-3 text-info" href="?action=home"><strong>SCIEN<span class="special rounded px-1">TIC</span></strong></a>
+            <a class="navbar-brand fs-3 text-info" href="?action=home"><strong class="titles">SCIEN<span class="bg-light text-dark rounded px-1">TIC</span></strong></a>
         </div>
         <div class="row">
-            <div class="col-12 col-md-4 p-3 fa-2x">
+            <div class="col-12 col-md-4 p-3 fa-2x text-light">
                 <i class="fa-brands fa-facebook mx-2"></i>
                 <i class="fa-brands fa-linkedin mx-2"></i>
                 <i class="fa-brands fa-github mx-2"></i>

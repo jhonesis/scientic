@@ -1,0 +1,29 @@
+@font-face
+	font-display: swap
+	font-family: 'IBM Plex Mono'
+	font-style: normal
+	font-weight: 400
+	src: url('../fonts/ibm-plex-mono-v19-latin-regular.woff2') format('woff2')
+	font-display: swap
+	font-family: 'IBM Plex Mono'
+	font-style: normal
+	font-weight: 700
+	src: url('../fonts/ibm-plex-mono-v19-latin-700.woff2') format('woff2')
+	font-display: swap
+	font-family: 'Open Sans'
+	font-style: normal
+	font-weight: 400
+	src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2')
+/*general*/
+* 
+	margin: 0 
+	padding: 0 
+.titles 
+	font-family: "IBM Plex Mono" 
+body 
+	font-family: "Open Sans" 
+a 
+	text-decoration: none 
+.fa-brands 
+	&:hover 
+		color: #9eeaf9 

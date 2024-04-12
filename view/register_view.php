@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h1 class="titles text-dark my-5 text-center"><strong>Become Part of Our Team</strong></h1>
         <div class="row my-5 text-center d-flex align-items-center mx-auto gx-5">   
             <figure>
-                <img src="assets/media/img_reg.png" class="img-fluid w-50 mb-5" alt="image register" loading="lazy">
+                <img src="assets/media/img_reg_min.webp" class="img-fluid w-50 mb-5" alt="image register" loading="lazy">
             </figure> 
             <div>
                 <p class="titles display-6 text-info"><strong>Register</strong></p>

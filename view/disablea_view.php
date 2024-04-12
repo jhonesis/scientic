@@ -29,7 +29,7 @@ valid integer, it calls the `dis_acc()` function passing the `id_user` as a para
                     <p><input type="submit" value="Disable" class="buttom"></p>
                 </div>
                 <div class="card_form">
-                    <p><img src="assets/media/img_disable.png" alt="image disable account" loading="lazy"></p>    
+                    <p><img src="assets/media/img_disable_min.webp" alt="image disable account" loading="lazy"></p>    
                 </div>
             </form>
         </div>

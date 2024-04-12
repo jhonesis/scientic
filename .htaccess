@@ -1,0 +1,11 @@
+<IfModule mod_deflate.c>
+    # Habilitar la compresión para archivos HTML, CSS, JS, XML, JSON, y otros tipos de archivos
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/x-httpd-php
+    AddOutputFilterByType DEFLATE application/pdf
+    AddOutputFilterByType DEFLATE image/webp
+</IfModule>

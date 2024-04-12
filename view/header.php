@@ -7,19 +7,19 @@
     <meta name="keywords" content="share, research, technology, review, projects, posts, development.">
     <meta name="language" content="English">
     <meta name="author" content="Jhon Deivy PEREZ ARGUELLO">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="preload">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="preload"/>
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <title>ScienTIC</title>
 </head>
 <body class="bg-light">
     <header class="container-fluid bg-dark justify-content-center align-items-center">
         <!--Menu--> 
-        <nav class="navbar fixed-top bgmenu navbar-expand-md navbar-dark px-3 container-fluid">
+        <nav class="navbar fixed-top bg-opacity-75 bg-dark navbar-expand-md navbar-dark px-3 container-fluid">
             <div>
-                <a class="navbar-brand fs-3 text-info" href="?action=home"><strong class="titles">SCIEN<span class="special rounded px-1">TIC</span></strong></a>
+                <a class="navbar-brand fs-3 text-info" href="?action=home"><strong class="titles">SCIEN<span class="bg-light text-dark rounded px-1">TIC</span></strong></a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" name="btn_menu" aria-label="button_menu" role="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="menu" class="collapse navbar-collapse justify-content-end text-center">

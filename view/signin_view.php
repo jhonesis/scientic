@@ -47,8 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>SCIENTIC</title>
+    <link rel="stylesheet" href="assets/css/style2.min.css">
+    <title>ScienTIC</title>
 </head>
 <body>
     <main id="main_login">
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="?action=signin" method="post" class="Form">
                 <p><input type="email" name="email_us" id="email_us" required  placeholder="E-mail"></p>
                 <p><input type="password" name="pass_us" id="pass_us" required placeholder="Password"></p>
-                <p><input type="submit" value="Sing In" class="buttom"></p>
+                <p><input type="submit" value="Sign In" class="buttom"></p>
             </form>
         </div>
     </main>
