@@ -1,6 +1,6 @@
 <?php
 
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 //************************************************************************************function copied
     function search_user($email_us,$pass_us){
         try {

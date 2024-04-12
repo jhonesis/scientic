@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 /**
  * The function `posts_invalid` retrieves posts that are not associated with any publication from a
  * database.

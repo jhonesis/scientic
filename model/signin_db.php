@@ -1,6 +1,6 @@
 <?php
 
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 
 /**
  * The function `search_user` searches for a user in the database based on their email and password,

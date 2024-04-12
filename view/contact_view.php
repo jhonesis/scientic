@@ -1,5 +1,5 @@
 <?php include RACINE . "/view/header.php"; ?>
-<div class="bg-dark"></br></br></br></div>
+<div class="bg-dark pt-5 pb-4"></div>
 <main class="container">
     <h1 class="titles text-dark my-5 text-center"><strong>Share your Concerns with Us</strong></h1>
     <div class="row my-5 text-center d-flex align-items-center mx-auto gx-5">

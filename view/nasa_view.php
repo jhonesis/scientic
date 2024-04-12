@@ -1,5 +1,5 @@
 <?php include RACINE."/view/header.php";?>
-<div class="bg-dark"></br></br></br></div>
+<div class="bg-dark pt-5 pb-4"></div>
     <main class="container">
         <div class="my-5">
             <h1 class="titles text-dark"><strong>Find your Tool, Immediately.</strong></h1>

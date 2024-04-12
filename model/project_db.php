@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 
 /**
  * The function `post_valid` retrieves information about a post, including publication date and user

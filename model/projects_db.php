@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 
 /**
  * The function `list_post` retrieves a list of posts with their titles and publication dates from a

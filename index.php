@@ -20,8 +20,6 @@ Finally, it includes the controller file corresponding to the determined route. 
     if (isset($_GET["action"]) && $_GET["action"]){
         $action = $_GET["action"];
         $rout=funrouter($action);
-    }
-    
+    } 
     require RACINE."/controller".$rout;    
-
 ?>

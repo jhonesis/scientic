@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 /**
  * The function `dis_acc` is a PHP function that deletes an account from a database
  * table based on the provided `id_user`. It first establishes a connection to the database, prepares a

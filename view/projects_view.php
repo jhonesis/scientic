@@ -1,6 +1,6 @@
 <?php include RACINE."/view/header.php";?>
     
-    <div class="bg-dark"></br></br></br></div>
+<div class="bg-dark pt-5 pb-4"></div>
     <main class="container">
         <h1 class="titles text-dark my-5"><strong>Shared Projects for You.</strong></h1>
         <div id="list_post"></div>
@@ -10,7 +10,7 @@
                 $id=$row["id_post"];
                 $titre=$row['titre'];
                 $date=$row['date_pub'];
-                echo "<script languaje='javascript' type='text/javascript'>list('$titre', '$date', '$id');</script>";
+                echo "<script language='javascript' type='text/javascript'>list('$titre', '$date', '$id');</script>";
             }
         ?>
     </main>

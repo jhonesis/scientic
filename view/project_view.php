@@ -1,5 +1,5 @@
 <?php include RACINE."/view/header.php";?>
-    <div class="bg-dark container-fluid"></br></br></br></div>
+<div class="bg-dark pt-5 pb-4"></div>
     <main class="container text-center">
         <h1 class="titles pt-4 pb-md-5"><?=$post["titre"]?></h1>
         <img src="<?=$post["image"]?>" alt="image post" class="img-fluid w-50 mb-3">

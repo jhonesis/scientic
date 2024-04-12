@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 /**
  * The function `add_post` inserts a new post into a database table with the provided title, image,
  * summary, description, and user ID.

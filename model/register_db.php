@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 /**
  * The function `add_user` inserts a new user into a database table with hashed password and a default
  * role of "contributor".

@@ -1,5 +1,5 @@
 <?php
-    include_once ("db_connection.php");
+    include_once RACINE."/model/db_connection.php";
 /**
  * The function `edit_user` updates a user's profile information in a database table with hashed
  * password.
