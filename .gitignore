@@ -1,5 +1,0 @@
-.env
-composer.json
-composer.lock
-vendor/
-/model/db_functions.php
