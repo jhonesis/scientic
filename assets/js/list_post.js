@@ -13,11 +13,7 @@ let div=document.querySelector("#list_post");
  */
 function list(titre,date,id){
     let div_post=document.createElement("div");
-    div_post.classList.add("rounded-2", "bg-white", "my-5", "shadow","p-3");
-    let dates=document.createElement("h6");
-    dates.classList.add("text-secondary");
-    dates.innerHTML=date;
-    div_post.appendChild(dates);
+    div_post.classList.add("rounded-2", "bg-white", "my-5", "shadow","p-3","border-top","border-5","border-info","border-opacity-25");
     let titres=document.createElement("a");
     titres.classList.add("text-dark","fs-3");
     titres.innerText=titre;
@@ -29,5 +25,9 @@ function list(titre,date,id){
         titres.classList.replace("text-info","text-dark");
     });
     div_post.appendChild(titres);
+    let dates=document.createElement("h6");
+    dates.classList.add("text-secondary");
+    dates.innerHTML=date;
+    div_post.appendChild(dates);
     div.appendChild(div_post);
 }

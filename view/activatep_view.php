@@ -46,7 +46,7 @@ publish the post. */
                     <div class="post_inv">
                         <div class="card_text">
                             <h3><?= $titre; ?></h3>
-                            <img src="<?= $image ?>" alt="image Post" loading="lazy">
+                            <img src="<?=$image ?>" alt="image Post" loading="lazy">
                             <p><?= $resume; ?></p>
                             <p><a href="<?= $description ?>">Project details</a></p>
                             <p>Author: <?= $id_author ?></p>

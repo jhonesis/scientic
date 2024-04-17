@@ -64,12 +64,46 @@ a{
   margin-top: 20px;
 }
 
+#file_img{
+  border-radius: none;
+  border: none;
+  font-size: 1.1rem;
+  margin-top:  0px;
+  box-shadow: none;
+  color: #6c757d;
+}
+
+label{
+  color:#6c757d;
+  align-self: self-start;
+  padding-left: 12px;
+  font-size: 1.1rem;
+}
+
+input[type=file]::file-selector-button{
+  color:#f8f9fa;
+  background-color:#212529;
+  border-radius: 5px;
+  border: solid 1px #212529;
+  cursor:pointer;
+  padding:4px 12px;
+}
+
+input[type=file]::file-selector-button:hover{
+  background-color: #6c757d;
+}
+
 .buttom{
   background-color: #0dcaf0;
   color: #212529; 
   padding: 5px 10px;
   border-radius: 5px;
   width: 25%;
+  cursor:pointer;
+}
+
+.buttom:hover{
+  background-color: #9eeaf9;
 }
 
 #logo_back{

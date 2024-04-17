@@ -45,7 +45,7 @@
             $message="Post published correctly";
             return $message;
         } catch (PDOException $e) {
-            throw new Exception("Error inserting the post: " . $e->getMessage());
+            throw new Exception("Error publishing the post: " . $e->getMessage());
         }
     }
 ?>

@@ -15,7 +15,7 @@ if(isset($_FILES['archivo'])) {
             $rutaDestino = $carpetaDestino . $nombreArchivo;
         
             if(move_uploaded_file($rutaArchivo, $rutaDestino)) {
-                echo "El archivo se ha subido correctamente.";
+                echo $rutaDestino;
             } else {
                 echo "Ha ocurrido un error al subir el archivo.";
             }
